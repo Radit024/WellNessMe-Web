@@ -1,0 +1,66 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        blue_gray: {
+          50: "#eaf0f7",
+          500: "#667085",
+          700: "#3d5a80",
+          900: "#26084d",
+          "500_01": "#677185",
+          "900_02": "#1d2b4f",
+          "900_01": "#26074c",
+          "700_01": "#4f555a",
+        },
+        white: { A700_90: "#ffffff90", A700_a2: "#ffffffa2", A700: "#ffffff" },
+        indigo: {
+          200: "#8fa5dd",
+          "200_01": "#8ea4dd",
+          A400_26: "#4461f226",
+          A400: "#4461f2",
+        },
+        deep_purple: {
+          200: "#b7a3d0",
+          300: "#915ed1",
+          700: "#54408c",
+          A200: "#6e39f9",
+        },
+        blue: { A200: "#4285f4" },
+        red: { 500: "#ea4335" },
+        green: { 600: "#34a853" },
+        black: { 900: "#000000", "900_21": "#00000021", "900_19": "#00000019" },
+        deep_orange: { 100: "#ffd0c6" },
+        gray: {
+          100: "#f7f7f7",
+          300: "#dfdfdf",
+          400: "#c7c7c7",
+          500: "#acadac",
+          900: "#14142f",
+          "300_01": "#dcdfdc",
+          "100_01": "#f6f6f6",
+        },
+        amber: { 500: "#fbbc05" },
+        orange: { 50: "#ffeddb" },
+      },
+      fontFamily: { urbanist: "Urbanist", inter: "Inter", satoshi: "Satoshi" },
+      boxShadow: {
+        bs: "0px 3px  20px 0px #00000019",
+        bs2: "0px 9.87px  12px 0px #00000021",
+        bs3: "0px 9.88px  12px 0px #00000021",
+        bs1: "0px 11.84px  20px 3.95px #4461f226",
+      },
+      backgroundImage: {
+        gradient: "linear-gradient(141deg ,#ffffff,#ffffff,#6e39f9)",
+      },
+      textShadow: { ts: "0px 11.85px  20px #4461f226" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms"), require("tailwindcss-textshadow")],
+};
